@@ -15,3 +15,9 @@ In the [example](https://github.com/mike42/escpos-php/blob/development/example/i
 ```php
    $connector = new NetworkPrintConnector("192.168.101.245", 9100);
 ```
+
+## Important. 
+- The application ignores jobs shorter than 16 bytes. The text in the example needs to be made longer.
+- Data exchange is one-way. Printer responses are not emulated.
+- The connection is limited in time. You have 100 seconds to start data transfer. 
+- Since there is no sign of the end of a print job in the protocol, a 5 second channel idle timeout is used.
