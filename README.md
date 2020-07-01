@@ -32,7 +32,7 @@ ESC/POS is a page description language that is commonly used for receipt printin
 
 Currently, the application can detect most commands and emulate the behavior of the standard print mode.
 
-- List commands
+- [List commands](commands.md)
 
 ### Capabilities
 
